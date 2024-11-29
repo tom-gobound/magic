@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Query Analyzer</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Data Query Analyzer</h1>
+        
+        <div class="document-selector">
+            <h3>Select Data Files</h3>
+            <div id="document-group" class="document-group">
+                <!-- Data file checkboxes will be dynamically inserted here -->
+            </div>
+        </div>
+
+        <div class="mode-selector">
+            <label>
+                <input type="radio" name="mode" value="server"> Server-side Processing
+            </label>
+            <label>
+                <input type="radio" name="mode" value="client" checked> Client-side Processing
+            </label>
+        </div>
+
+        <div>
+            <h3>Question</h3>
+            <input type="text" id="question" placeholder="Enter your question">
+        </div>
+
+        <div>
+            <h3>Context</h3>
+            <textarea id="context" rows="3" placeholder="Provide additional context for your question"></textarea>
+        </div>
+
+        <button onclick="window.analyzeQuery()">Analyze</button>
+
+        <div>
+            <h3>Response</h3>
+            <div id="response"></div>
+        </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>

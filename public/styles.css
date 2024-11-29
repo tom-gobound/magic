@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f2f5;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.dataset-selector,
+.mode-selector {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.document-selector {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.document-selector h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.document-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px;
+}
+
+.document-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 12px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.document-group label:hover {
+    background: #f0f0f0;
+}
+
+.dataset-selector label,
+.mode-selector label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.data-generation {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.secondary-button {
+    background: #4CAF50;
+}
+
+.secondary-button:hover {
+    background: #45a049;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    background: #0066cc;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin: 20px 0;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background: #0052a3;
+}
+
+#response {
+    margin-top: 20px;
+}
+
+#response h4 {
+    color: #0066cc;
+    margin: 20px 0 10px 0;
+}
+
+#response pre {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+.evaluation-result {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 10px;
+    white-space: pre-wrap;
+}
+
+.error {
+    color: #dc3545;
+    padding: 15px;
+    background: #fff5f5;
+    border-radius: 6px;
+    margin-top: 10px;
+}
